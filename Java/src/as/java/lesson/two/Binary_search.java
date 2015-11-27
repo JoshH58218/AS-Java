@@ -1,10 +1,30 @@
 package as.java.lesson.two;
-
+import java.util.Scanner;
 public class Binary_search {
-	static int[] a={1,2,12,22,33,100};
-	static int x=22;
 	
+		
+	
+	
+	
+	static int[] a={};
+	static int x=0;
+	
+	@SuppressWarnings("resource")
 	public static void main(String[]args){
+		Scanner sc=new Scanner (System.in);
+		System.out.println("How long do you want the array? ");
+		int n = sc.nextInt();
+		int [] input=new int[n];
+		for (int i=0;i<n;i++){
+			input [i]= (int)(Math.random()*100);
+			
+		}
+		a=input;
+		
+		System.out.println("what number are you looking for? ");
+		x= sc.nextInt();
+		
+		
 		String result = binarySearch(a,x)?"value found":"Not found";
 		System.out.print(result);;
 	}
