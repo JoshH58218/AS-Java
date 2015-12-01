@@ -5,6 +5,12 @@ public class Stack {
 	private long[] stackArray;
 	private int top;
 	
+	
+	
+	public int getTop () {
+		return top;
+	}
+	
 	public Stack(int maxSize){
 		this.maxSize=maxSize;
 		this.top=-1;
@@ -12,13 +18,13 @@ public class Stack {
 	}
 	
 	public void push(long j){
-		String result = top==stackArray.length-1?" Stack is fullt": pushItem(j);
+		String result = top==stackArray.length-1?" Stack is full": pushItem(j);
 		msgBox(result);
 	}
 	
 	public String pushItem(long j){
 		stackArray[++top]=j;
-		return " Item added to stack";
+		return " Item (" + j + ") added to stack";
 	}
 	
 	public void pop(){
@@ -26,7 +32,7 @@ public class Stack {
 	}
 	
 	public String popItem(){
-		return "Item at the top : " + stackArray [ top--]+ "removed";
+		return "Item at the top (" + stackArray [ top--]+ ") removed";
 	}
 	
 	public void msgBox(String message){
@@ -39,6 +45,9 @@ public class Stack {
 	
 	public boolean isFull(){
 		return (top==stackArray.length-1);
+	}
+	public long[] getArray(){
+		return stackArray;
 	}
 
 }

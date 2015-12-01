@@ -21,10 +21,11 @@ public class Queue {
 	public int getfront (){
 		return front;
 	}
+
 	
 	public void insert(long j){
-		String result=rear==maxSize-1? "Queue full":addItem(j);
-		System.out.println(result);
+		String result = rear==queueArray.length-1?" Queue is full": addItem(j);
+		System.out.println(result + " (" +j +")");
 	}
 	
 	public String addItem(long j){
@@ -49,7 +50,7 @@ public class Queue {
 	}
 	
 	public boolean isFull(){
-		return nItems==maxSize;
+		return nItems==queueArray.length;
 	}
 	public long peek(){
 		return queueArray[front];
