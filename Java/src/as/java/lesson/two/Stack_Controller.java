@@ -20,12 +20,19 @@ public class Stack_Controller {
 		}
 		System.out.println();
 		
+		for(;;){
+			System.out.println("Input a command ");
+			String command= sc.next();
+			if(command.equals("pop")){
+				System.out.println();
 		linearStack.pop();
 		
-
 		for(int i=0;i<=linearStack.getTop(); i++){
 			System.out.print(x[i] +" ");
 		}
+		System.out.println();
+		
+	}else if(command.equals("push")){
 		System.out.println();
 		System.out.println("Enter a number to add to the stack ");
 		linearStack.push(sc.nextInt());
@@ -33,10 +40,17 @@ public class Stack_Controller {
 		for(int i=0;i<=linearStack.getTop();i++){
 			System.out.print(x[i] +" ");
 		}
-	
+		System.out.println();
+			}else if(command.equals("end")){
+			break;
+		}else{
+			System.out.println();
+		System.out.println("Invalid command");
+		System.out.println();
+	}
+				
 		}
-		
-
+		}
 	}
 
 

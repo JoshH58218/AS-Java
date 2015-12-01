@@ -25,7 +25,7 @@ public class Queue {
 	
 	public void insert(long j){
 		String result = rear==queueArray.length-1?" Queue is full": addItem(j);
-		System.out.println(result + " (" +j +")");
+		System.out.println(result);
 	}
 	
 	public String addItem(long j){
