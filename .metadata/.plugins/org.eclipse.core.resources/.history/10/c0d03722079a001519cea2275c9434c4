@@ -9,15 +9,15 @@ public class LinkedList_Controller {
 		for(;;){
 			System.out.println("Input a command (Add at front, Delete at front, Display list, Number of links, or End");
 			command=sc.next();
-			if(command.equals("Add1")){
+			if(command.equals("AddAtFront")){
+				
 				studentDataList.insertFirst(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
-				studentDataList.displayList();
-			}else if(command.equals("delete1")){
+			}else if(command.equals("DeleteAtFront")){
 				studentDataList.deleteFirst();
 				
-			}else if(command.equals("Display")){
+			}else if(command.equals("DisplayList")){
 				studentDataList.displayList();
-			}else if(command.equals("Number")){
+			}else if(command=="Numberoflinks"){
 				
 			}else if(command.equals("End")){
 				break;

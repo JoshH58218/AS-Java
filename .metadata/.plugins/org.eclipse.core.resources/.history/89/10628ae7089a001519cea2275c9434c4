@@ -5,21 +5,20 @@ public class LinkedList_Controller {
 		Scanner sc=new Scanner (System.in);
 		Linked_List studentDataList=new Linked_List();
 		
-		String command;
+		int command;
 		for(;;){
 			System.out.println("Input a command (Add at front, Delete at front, Display list, Number of links, or End");
-			command=sc.next();
-			if(command.equals("Add1")){
+			command=sc.nextInt();
+			if(command==1){
 				studentDataList.insertFirst(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
-				studentDataList.displayList();
-			}else if(command.equals("delete1")){
+			}else if(command==2){
 				studentDataList.deleteFirst();
 				
-			}else if(command.equals("Display")){
+			}else if(command==3){
 				studentDataList.displayList();
-			}else if(command.equals("Number")){
+			}else if(command==4){
 				
-			}else if(command.equals("End")){
+			}else if(command==5){
 				break;
 			}else{
 				System.out.println("Invalid command");

@@ -3,7 +3,7 @@ package as.java.lesson.two;
 public class Linked_List {
 	private Link first;
 	
-	public void Linked_List(){
+	public Linked_List(){
 		first=null;
 	}
 	

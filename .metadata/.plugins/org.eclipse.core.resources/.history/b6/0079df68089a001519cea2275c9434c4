@@ -6,21 +6,20 @@ public class LinkedList_Controller {
 		Linked_List studentDataList=new Linked_List();
 		
 		String command;
-		for(;;){
+		
 			System.out.println("Input a command (Add at front, Delete at front, Display list, Number of links, or End");
 			command=sc.next();
-			if(command.equals("Add1")){
+			if(command=="add"){
 				studentDataList.insertFirst(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
-				studentDataList.displayList();
-			}else if(command.equals("delete1")){
+			}else if(command.equals("2")){
 				studentDataList.deleteFirst();
 				
-			}else if(command.equals("Display")){
+			}else if(command.equals("3")){
 				studentDataList.displayList();
-			}else if(command.equals("Number")){
+			}else if(command=="4"){
 				
 			}else if(command.equals("End")){
-				break;
+				
 			}else{
 				System.out.println("Invalid command");
 				System.out.println();
@@ -28,7 +27,7 @@ public class LinkedList_Controller {
 			
 	
 		
-		}
+		
 		sc.close();
 	}
 	
