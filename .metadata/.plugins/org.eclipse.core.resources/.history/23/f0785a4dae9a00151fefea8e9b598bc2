@@ -34,7 +34,8 @@ public class LinkedList_Controller {
 			}else if(command.equals("Display")){
 				studentDataList.displayList();
 			}else if(command.equals("Number")){
-				int count=studentDataList.linkCount();
+				int count=0;
+				studentDataList.linkCount(count);
 				System.out.println(count);
 			}else if(command.equals("End")){
 				break;
