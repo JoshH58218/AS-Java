@@ -12,7 +12,7 @@ public class LinkedList_Controller {
 			String nextName, nextSubject,nextTeam;
 			int nextAge;
 			boolean NT = false;
-			if(command.equals("Add")){
+			if(command.equals("Add at front")){
 				System.out.println("Input Name: ");
 				nextName=sc.next();
 				System.out.println("Input Age: ");
