@@ -26,7 +26,7 @@ public class Armstrong {
 			System.out.println(n + " is an armstrong number.");
 		} else
 			System.out.println(n + " is not an armstrong number.");
-
+		sc.close();
 	}
 
 	static int power(int x, int y) {
@@ -36,7 +36,7 @@ public class Armstrong {
 			p = p * x;
 		}
 		return p;
-
+		
 	}
 
 }

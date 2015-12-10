@@ -1,0 +1,26 @@
+package exceptions;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+public class TryCatch {
+	
+	public void FileReaderUtil(){
+		
+		try{
+			File violinist=new File("LetticeRowbotham.txt");
+			FileReader readLetticeFile=new FileReader(violinist);
+			
+		}catch(FileNotFoundException fnfException){
+			fnfException.printStackTrace();
+		}finally{
+			System.out.println("I will be accessed and the code inside will be executed!");
+		}
+	}
+
+	public static void main(String[]args){
+		TryCatch tryCatch=new TryCatch();
+		
+		tryCatch.FileReaderUtil();
+		System.out.println();
+	}
+}
