@@ -1,0 +1,10 @@
+package contact_manager;
+
+public class Contact {
+	private int ID;
+	private String Name;
+	private String Notes;
+	
+	
+
+}

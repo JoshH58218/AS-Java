@@ -1,0 +1,11 @@
+package jFrames;
+
+public class ButtonDemo {
+	public static void main(String[]args){
+		ButtonFrame frm = new ButtonFrame("Button Demo");
+
+	    frm.setSize( 300, 100 );     
+	    frm.setVisible( false );
+	}
+
+}
